@@ -1,0 +1,191 @@
+
+@charset "UTF-8";
+.svg_icon{width:14px; height:14px;}
+
+/* header */
+#wrap{width:100%; margin:0 auto; position:relative; }
+header{width:100%; height:40px; background:white; position:fixed; z-index: 3;}
+#navi{text-align:center; padding-top:6px;}
+#navi ul li{display:inline-block; padding-right:6%; font-size:14px;}
+#navi ul li:last-child{padding-right:0;}
+#navi ul li a{color:black;}
+#navi ul li a:hover{color:rgb(221, 210, 55);}
+
+#mobile_navi{display:none;}
+
+/* icon & hover*/
+#logo_icon img{display:none;}
+#logo_icon img:first-child{display:inline;}
+#logo_icon:hover img:first-child{display:none;}
+#logo_icon:hover img:last-child{display:inline;}
+
+#search_icon img{display:none;}
+#search_icon img:first-child{display:inline;}
+#search_icon:hover img:first-child{display:none;}
+#search_icon:hover img:last-child{display:inline;}
+
+#cart_icon img{display:none;}
+#cart_icon img:first-child{display:inline;}
+#cart_icon:hover img:first-child{display:none;}
+#cart_icon:hover img:last-child{display:inline;}
+
+
+/* section */
+/* full_size1 */
+section{width:100%; margin:0 auto; padding-top:30px; }
+.full_size{width:100%; background:rgb(243, 243, 243); margin-bottom:10px; position:relative; text-align:center; }
+.full_size:first-child{padding:50px 0;}
+.full_size>.full_txt{padding-top:30px;}
+.full_txt>h1{font-size:28px;}
+.full_txt>p{font-size:20px;}
+.full_txt>span{font-size:18px; font-weight:bold; color:rgb(55, 94, 177);}
+.full_txt>span a{color:rgb(55, 94, 177);}
+.full_txt>span a:hover{text-decoration:underline;}
+
+#img_01{width:50%;}
+#img_02{width:30%;}
+#img_03{width:60%;}
+
+/* full_size2 */
+.full_size2{width:100%; overflow:hidden; margin-bottom:5px;}
+.full_size2 div{width:49.75%; float:left; position:relative; margin-left:0.5%;}
+.full_size2 div:first-child{margin-left:0;}
+.full_size2 div img{width:100%;}
+/* .full_size2 .sub_txt{position:absolute; left:50%; top:20px; transform:translateX(-50%); text-align:center;} */
+#white_color,#white_color2,#white_color3{color:white;}
+#white_color a,#white_color2 a,#white_color3 a{color:white;} 
+#white_color span,#white_color2 span,#white_color3 span{color:white;} 
+
+/* font */
+.full_size2 .sub_txt{position:absolute; top:20px; left:50%; transform:translateX(-50%); text-align:center;}
+.full_size2 .sub_txt h1{font-size:35px;}
+.full_size2 .sub_txt p{font-size:18px; }
+.full_size2 .sub_txt span{color:rgb(50, 93, 185);}
+.full_size2 .sub_txt span a{color:rgb(50, 93, 185); font-weight:bold; }
+.full_size2 .sub_txt span a:hover{text-decoration:underline;} 
+
+/* footer */
+footer{width:100%; background:rgb(228, 228, 228);}
+#footer{width:80%; margin:0 auto;} 
+#footer1{font-size:11px; padding:20px 0; color:gray;}
+.line{height:1px; background:rgb(100, 99, 99);}
+
+#footer2{width:100%; text-align:center; padding-top:20px;}
+#footer2>div{display:inline-block; padding-right:4%; padding-left:4%; vertical-align:top;}
+#footer2>div p{font-size:12px; color:#333; text-align:left; font-weight:bold;}
+#footer2 div ul{text-align:left; margin:10px 5px;}
+#footer2>div ul li{font-size:12px; margin-bottom:8px;}
+#footer2>div li a{color:#333;}
+#footer_title04{margin-top:30px;}
+#footer_title06{margin-top:30px;}
+
+#footer3{clear:both;}
+#footer3{padding-bottom:30px;}
+#footer3>div{font-size:12px; margin:10px 0; color:gray; overflow:hidden;}
+#footer>div a:hover{text-decoration:underline black;}
+#footer3>div:first-child a{color:blue;}
+#footer3>div:last-child a{color:rgb(70, 68, 68);}
+#footer3>div span{float:right;}
+
+
+/* 푸터미디어중간 */
+@media(max-width:1300px){
+#footer2>div{padding-right:3%; padding-left:3%;}
+#footer2 div:first-child{padding-left:0;}
+#footer2 div:last-child{padding-right:0;}
+     
+}
+
+/* 테블릿 */
+@media(max-width:1024px){
+/* section */
+/* full_size1 */
+
+.full_size>.full_txt{padding-top:20px;}
+.full_txt>h1{font-size:24px;}
+.full_txt>p{font-size:18px;}
+.full_txt>span{font-size:16px;}
+
+#img_01{width:45%;}
+#img_02{width:25%;}
+#img_03{width:50%;}
+
+/* full_size2 */
+.full_size2 div{width:48%; margin-left:1.5%;}
+.full_size2 div:first-child{margin-left:1.5%;}
+
+/* font */
+.full_size2 .sub_txt{top:10px;}
+.full_size2 .sub_txt h1{font-size:30px;}
+.full_size2 .sub_txt p{font-size:16px;}
+.full_size2 .sub_txt span{font-size:14px; }
+
+/* footer */
+#footer2{width:100%; text-align:center;}
+#footer2>div{display:inline-block; padding-right:2%; padding-left:2%; vertical-align:top;}
+#footer2 div:first-child{padding-left:0;}
+#footer2 div:last-child{padding-right:0;}
+
+#footer2>div ul{text-align:left;}
+#footer2 ul>p a{font-size:12px; color:#333;}
+
+#footer2>div li{font-size:12px; margin-bottom:8px;}
+#footer2>div li a{color:#333;}
+#footer2>div li a:hover{text-decoration:2px ;}
+     
+}
+        
+
+/* 모바일 */
+@media (max-width:960px){
+
+#navi>ul{display:none;}
+#mobile_navi{display:inline;}
+#mobile_navi>div{display:inline-block;}
+#mobile_logo{padding-left:40%; padding-right:40%;}
+#tgl_menu>div{display:block; width:23px; height:2px; background:black; margin-bottom:5px;} 
+
+/* section */
+/* full_size1 */
+.full_size2 div:first-child{margin-left:0%;}
+.full_size:first-child{padding-bottom:30px;}
+.full_size>.full_txt{padding-top:30px;}
+.full_txt{width:80%; margin:0 auto; padding-bottom:30px;}
+.full_txt>h1{font-size:23px;}
+.full_txt>p{font-size:15px;}
+.full_txt>span{font-size:13px;}
+
+/* full_size2 */
+.full_size2 div{width:100%; display:block; margin-left:0%;}
+.full_size2 div img{height:400px; }
+
+/* font */
+.full_size2 .sub_txt{top:20px;}
+.full_size2 .sub_txt h1{font-size:25px;}
+.full_size2 .sub_txt p{font-size:15px; }
+.full_size2 .sub_txt span{font-size:13px;}
+
+/* footer */
+#footer{width:90%;} 
+
+#footer2{padding:25px 10px 10px 10px;}
+#footer2>div{display:block; padding-right:0; padding-left:0;}
+#footer2>div p{cursor:pointer; margin-bottom:10px; color:black; }
+#footer2>div p:hover{text-decoration: underline;}
+#footer2 ul>p a{color:#444; }
+
+#footer2>div ul{display:none; margin:0;}
+
+#footer_title04{margin-top:0px;}
+#footer_title06{margin-top:0px;}
+
+
+#footer3>div:last-child p{font-size:9px;}
+}
+
+/* 스몰모바일 */
+@media (max-width:690px){
+#mobile_logo{padding-left:30%; padding-right:30%;}
+#tgl_menu>div{width:18px;} 
+    
+}
