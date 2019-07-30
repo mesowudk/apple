@@ -1,0 +1,304 @@
+
+
+@charset "UTF-8";
+/* header */
+#wrap{width:100%; margin:0 auto; position:relative; }
+header{width:100%; height:40px; background:rgb(255, 255, 255); position:fixed; z-index: 3;}
+#navi{text-align:center; padding-top:6px;}
+#navi ul li{display:inline-block; padding-right:6%; font-size:14px;}
+#navi ul li:last-child{padding-right:0;}
+#navi ul li a{color:black;}
+#navi ul li a:hover{color:rgb(221, 210, 55);}
+
+#mobile_navi{display:none;}
+
+/* icon & hover*/
+#logo_icon img{display:none;}
+#logo_icon img:first-child{display:inline;}
+#logo_icon:hover img:first-child{display:none;}
+#logo_icon:hover img:last-child{display:inline;}
+
+#search_icon img{display:none;}
+#search_icon img:first-child{display:inline;}
+#search_icon:hover img:first-child{display:none;}
+#search_icon:hover img:last-child{display:inline;}
+
+#login_icon img{display:none;}
+#login_icon img:first-child{display:inline;}
+#login_icon:hover img:first-child{display:none;}
+#login_icon:hover img:last-child{display:inline;}
+
+/* 모달스타일 */
+#modal{position:fixed; left:0; top:0px; width:100%; height:100%; 
+        background:rgba(234,244,244,0.5);  z-index: 99;}
+#modal_box>input
+{width:100%; 
+height:40px;
+color:#333;
+background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); 
+background-repeat:no-repeat;
+background-position:100% center;
+} 
+#modal_box>input[placeholder="apple.com검색"]{color:#666; font-size:16px; padding-left:10px;}
+#modal_box input:hover{outline: 0; }
+
+#modal_box{width:40%; position: absolute;; top:0; left:50%; transform:translateX(-50%);}
+#box02 {width:100%; height:250px; background:#333; }
+#box02 li{margin:10px 20px; color:white; cursor:pointer;}
+#box02 li:hover{text-decoration:underline;}
+#box02 span{color:white; font-size:12px; margin-left:10px;}
+#close_btn{position:absolute; right:20px; bottom:20px; color:white; font-size:14px; cursor:pointer;}
+
+/* sub_navi */
+#sub_navi{background:rgb(241, 241, 241); padding:60px 0 20px 0; text-align:center;}
+#sub_navi>div{display:inline-block; padding-right:1.5%; padding-left:1.5%;}
+#sub_navi>div p{font-size:14px;}
+#sub_navi>div p:hover{color:black;}
+
+/* section */
+section{width:100%; margin:0 auto; }
+#full_size{text-align:center; height:280px; padding-top:40px; background:rgb(243, 231, 185);}
+#full_txt{padding-top:50px;}
+#full_txt>h1{font-size:30px;}
+#full_txt>p{font-size:20px;}
+#full_txt>span{color:#333; font-weight:bold;}
+#full_txt>span a{color:#333; font-weight:bold;}
+#full_txt>span a:hover{text-decoration:underline;}
+
+#txt_box1{text-align:center; margin:80px 0;}
+#full_txt2>p{font-size:25px; color:#666; font-weight:bold;}
+#full_txt2>h1{font-size:38px; font-weight:bold;}
+
+/* 3박스,4박스 */
+.full_white_box{text-align:center;}
+.full_white_box:last-child{margin-bottom:0px;}
+.full_white_box>div{display:inline-block;}
+.full_white_box>.sub_txt{vertical-align:top; margin-top:30px;}
+
+.sub_txt>p{font-size:25px; color:#333; font-weight:bold; margin:10px 0;}
+.sub_txt>h1{font-size:30px; font-weight:bold;}
+.sub_txt>p:nth-of-type(2){font-size:16px;}
+.sub_txt>button{padding:10px 20px; border-radius:5px; color:#333; }
+.sub_txt>button:hover{cursor: pointer; font-weight:bold;}
+.sub_txt>p:nth-of-type(3){font-size:16px; color:rgb(77, 123, 221);}
+.sub_txt>p:nth-of-type(3) a{color:rgb(77, 123, 221); font-weight:bold;}
+.sub_txt>p:nth-of-type(3) a:hover{text-decoration:underline;}
+
+
+/* section2 */
+#section2{width:100%; background:rgb(243, 243, 243); padding:20px 0 40px 0;}
+
+/* 80% box */
+.white_box{width:80%; margin:0 auto; background:white; margin-bottom:20px; text-align: center;}
+.white_box>div{display:inline-block; vertical-align:middle; text-align:center;}
+
+#wb_subtxt01{padding-left:5%;}
+#wb_subtxt01>h1{font-size:35px; margin-bottom:10px;}
+#wb_subtxt01 span{color:rgb(77, 123, 221); font-weight:bold;}
+#wb_subtxt01 span a{color:rgb(77, 123, 221); }
+#wb_subtxt01 span a:hover{text-decoration:underline;}
+
+#big_img3>img{width:600px;}
+#big_img4>img{width:500px;}
+
+#big_img4{padding-left:5%;}
+#wb_subtxt02{padding-left:5%;}
+#wb_subtxt02>h1{font-size:35px; }
+#wb_subtxt02 p{ margin-bottom:10px;}
+
+#wb_subtxt02 span{color:rgb(77, 123, 221); font-weight:bold;}
+#wb_subtxt02 span a{color:rgb(77, 123, 221); }
+#wb_subtxt02 span a:hover{text-decoration:underline;}
+
+/* 배경색 텍스트  박스*/
+#gray_box{width:100%; text-align:center; margin-top:100px;}
+#gray_box>div{width:40%; display:inline-block;}
+.left_right_txt>h4{font-size:20px;}
+.left_right_txt>p{font-size:18px; margin:10px 0;}
+.left_right_txt>p:nth-of-type(3){color:rgb(77, 123, 221);}
+.left_right_txt>p:nth-of-type(3) a{color:rgb(77, 123, 221); font-weight:bold;} 
+.left_right_txt>p:nth-of-type(3) a:hover{text-decoration:underline;}
+
+/* 타이틀 */
+.tit01{clear:both; font-size:45px; font-weight:bolder; text-align: center; padding:100px 0;} 
+
+/* 에어팟,악세서리 */
+#content6{text-align:center;}
+#content6>div{display:inline-block; text-align:center; vertical-align:top; margin-right:10px;  margin-left:10px;}
+.white_box2{width:40%; background:white; }
+.white_box2 div img{width:100%;}
+.white_box2 div img:last-of-type{margin-top:30px;}
+
+.sub_txt3{margin:40px 0;}
+.sub_txt3>h1{font-size:35px; font-weight:bold; }
+.sub_txt3 p{margin:10px 0; font-size:18px;}
+.sub_txt3 span{font-weight:bold; color:rgb(77, 123, 221);}
+.sub_txt3 span>a{color:rgb(77, 123, 221);}
+
+
+/* content7 */
+.content7{width:85%; margin:0 auto; position:relative; text-align:center;}
+.content7 div img{width:100%;}
+.content7 .sub_txt4{position:absolute; left:50%; top:10%; transform:translateX(-50%);}
+
+.sub_txt4>h1{font-size:40px; color:white;}
+.sub_txt4>p{font-size:18px; margin:10px 0; color:white;}
+.sub_txt4>span{font-weight:bold; color:white; }
+.sub_txt4>span a{color:white;}
+.sub_txt4>span a:hover{text-decoration:underline;}
+.sub_txt3>span>a:hover{text-decoration:underline;}
+
+/* footer */
+footer{width:100%; background:rgb(228, 228, 228);}
+#footer{width:80%; margin:0 auto;} 
+#footer1{font-size:11px; padding:20px 0; color:gray;}
+.line{height:1px; background:rgb(100, 99, 99);}
+
+#footer2{width:100%; text-align:center; padding-top:20px;}
+#footer2>div{display:inline-block; padding-right:4%; padding-left:4%; vertical-align:top;}
+#footer2>div p{font-size:12px; color:#333; text-align:left; font-weight:bold;}
+#footer2 div ul{text-align:left; margin:10px 5px;}
+#footer2>div ul li{font-size:12px; margin-bottom:8px;}
+#footer2>div li a{color:#333;}
+#footer_title04{margin-top:30px;}
+#footer_title06{margin-top:30px;}
+
+#footer3{clear:both;}
+#footer3{padding-bottom:30px;}
+#footer3>div{font-size:12px; margin:10px 0; color:gray; overflow:hidden;}
+#footer>div a:hover{text-decoration:underline black;}
+#footer3>div:first-child a{color:blue;}
+#footer3>div:last-child a{color:rgb(70, 68, 68);}
+#footer3>div span{float:right;}
+
+
+@media(max-width:1390px){
+/* 80% box */
+
+#wb_subtxt01{padding-left:3%;}
+#wb_subtxt01>h1{font-size:30px;}
+
+#big_img3>img{width:500px;}
+#big_img4>img{width:400px;}
+
+#big_img4{padding-left:3%;}
+#wb_subtxt02{padding-left:3%;}
+#wb_subtxt02>h1{font-size:30px;}
+
+/* footer */
+
+#footer2>div{display:inline-block; padding-right:3%; padding-left:3%; vertical-align:top;}
+}
+
+@media(max-width:1200px){
+/* 80% box */
+#wb_subtxt01{padding-left:2%;}
+
+#big_img3>img{width:400px;}
+#big_img4>img{width:330px;}
+
+#big_img4{padding-left:2%;}
+#wb_subtxt02{padding-left:2%;}
+#wb_subtxt02 p{font-size:14px;}
+
+#footer2>div{padding-right:2%; padding-left:2%;}
+}
+
+
+/* 테블릿 */
+@media(max-width:1024px){
+/* header */
+#navi ul li{padding-right:5%; }
+
+/* 모달스타일 */
+#modal_box>input[placeholder="apple.com검색"]{font-size:14px;}
+#modal_box{width:60%;}
+
+/* sub_navi */
+#sub_navi{padding:50px 0 20px 0;}
+#sub_navi>div{display:inline-block; padding-right:1%; padding-left:1%;}
+#sub_navi>div p{font-size:13px;}
+
+/* section */
+#full_size{height:250px; padding-top:30px;}
+#full_txt{padding-top:40px;}
+#full_txt>h1{font-size:25px;}
+#full_txt>p{font-size:18px;}
+
+#txt_box1{margin:70px 0;}
+#full_txt2>p{font-size:20px;}
+#full_txt2>h1{font-size:33px;}
+
+/* 3박스,4박스 */
+.sub_txt>p{font-size:20px;}
+.sub_txt>h1{font-size:25px;}
+
+/* 80% box */
+.white_box{width:90%;}
+
+#wb_subtxt01{padding-left:2%;}
+#wb_subtxt01>h1{font-size:30px;}
+
+#big_img3>img{width:400px;}
+
+#big_img4{padding-left:3%;}
+#wb_subtxt02{padding-left:3%;}
+#wb_subtxt02>h1{font-size:30px; }
+#wb_subtxt02 p{ margin-bottom:10px;}
+
+/* 배경색 텍스트  박스*/
+#gray_box{margin-top:80px;}
+.left_right_txt>h4{font-size:18px;}
+.left_right_txt>p{font-size:15px;}
+
+/* 타이틀 */
+.tit01{font-size:40px; padding:80px 0;} 
+
+/* 에어팟,악세서리 */
+#content6{text-align:center;}
+#content6>div{display:inline-block; text-align:center; vertical-align:top; margin-right:10px;  margin-left:10px;}
+.white_box2{width:40%; background:white; }
+.white_box2 div img{width:100%;}
+.white_box2 div img:last-of-type{margin-top:30px;}
+
+.sub_txt3{margin:40px 0;}
+.sub_txt3>h1{font-size:35px; font-weight:bold; }
+.sub_txt3 p{margin:10px 0; font-size:18px;}
+.sub_txt3 span{font-weight:bold; color:rgb(77, 123, 221);}
+.sub_txt3 span>a{color:rgb(77, 123, 221);}
+
+
+/* content7 */
+.content7{width:85%; margin:0 auto; position:relative; text-align:center;}
+.content7 div img{width:100%;}
+.content7 .sub_txt4{position:absolute; left:50%; top:10%; transform:translateX(-50%);}
+
+.sub_txt4>h1{font-size:40px; color:white;}
+.sub_txt4>p{font-size:18px; margin:10px 0; color:white;}
+.sub_txt4>span{font-weight:bold; color:white; }
+.sub_txt4>span a{color:white;}
+.sub_txt4>span a:hover{text-decoration:underline;}
+.sub_txt3>span>a:hover{text-decoration:underline;}
+
+/* footer */
+#footer{width:90%;} 
+
+#footer2{padding:25px 10px 10px 10px;}
+#footer2>div{display:block; padding-right:0; padding-left:0;}
+#footer2>div p{cursor:pointer; margin-bottom:10px; color:black; }
+#footer2>div p:hover{text-decoration: underline;}
+#footer2 ul>p a{color:#444; }
+
+#footer2>div ul{display:none; margin:0;}
+
+#footer_title04{margin-top:0px;}
+#footer_title06{margin-top:0px;}
+
+#footer3>div:last-child p{font-size:9px;}
+}
+
+
+        
+}
+
+
